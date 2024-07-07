@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Théorie de nombres</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .letter {
+            display: inline-block;
+            position: relative;
+            font-size: 48px;
+            --char-color: #fff; /* Couleur par défaut des lettres */
+            color: var(--char-color);
+        }
+
+        .letter::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .probleme {
+            background-color: #4a4a1f;
+            border: 1px solid #3a3a1f;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .enonce {
+            background-color: #6a5a2f;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        button{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <span class="letter" style="--char-color: #ff4a4a;">T</span>
+        <span class="letter" style="--char-color: #4aff73;">h</span>
+        <span class="letter" style="--char-color: #4a4aff;">é</span>
+        <span class="letter" style="--char-color: #ffcc4a;">o</span>
+        <span class="letter" style="--char-color: #4affff;">r</span>
+        <span class="letter" style="--char-color: #ff4aff;">i</span>
+        <span class="letter" style="--char-color: #73ff4a;">e</span>
+        <span class="letter" style="--char-color: #4a73ff;"> </span>
+        <span class="letter" style="--char-color: #ff4a73;">d</span>
+        <span class="letter" style="--char-color: #4affcc;">e</span>
+        <span class="letter" style="--char-color: #cc4aff;"> </span>
+        <span class="letter" style="--char-color: #4accff;">n</span>
+        <span class="letter" style="--char-color: #4a4a4a;">o</span>
+        <span class="letter" style="--char-color: #ffccff;">m</span>
+        <span class="letter" style="--char-color: #ccffcc;">b</span>
+        <span class="letter" style="--char-color: #ff99cc;">r</span>
+        <span class="letter" style="--char-color: #99ffff;">e</span>
+        <span class="letter" style="--char-color: #ffff66;">s</span>
+    </div>
+
+    <div class="container">
+        <div class="probleme">
+            <div class="enonce">
+                Montrer que la fraction \( \frac{21n + 4}{14n + 3} \) est irréductible quel que soit \( n \in \mathbb{N} \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Prouver le critère de divisibilité par 17 suivant : Le nombre \( \overline{a_n a_{n-1} \ldots a_1 a_0} \) est divisible par 17 si et seulement si le nombre \( \overline{a_n a_{n-1} \ldots a_1} - 5a_0 \) est divisible par 17.
+                <br>
+                Remarque : Ce critère peut donc être utilisé en se ramenant à des nombres de plus en plus petits. Par exemple : \( 82858 \rightarrow 8285 - 5 \cdot 8 = 8245 \rightarrow 824 - 5 \cdot 5 = 799 \rightarrow 79 - 5 \cdot 9 = 34 \). Vu que 34 est divisible par 17, le critère nous dit que 82858 également.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Prouver que si \( p \) et \( p^2 + 8 \) sont premiers, alors \( p^3 + 8p + 2 \) également.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Combien existe-t-il de nombres naturels multiples de 15 possédant exactement 15 diviseurs positifs ?
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Trouver tous les couples d'entiers \( (x, y) \) vérifiant l'équation \( x^4 - y^2 = 17 \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Montrer que si on divise un nombre premier par 30, alors le reste de la division est soit 1, soit un nombre premier. A-t-on le même résultat lorsque le diviseur est 60 ou 90 ?
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soient \( m \) et \( n \) des nombres naturels non nuls tels que \( mn + 1 \) est divisible par 24. Montrer que \( m + n \) est divisible par 24 également.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soient \( a \) et \( b \) des nombres naturels distincts. Montrer qu'il existe une infinité de nombres naturels \( s \) tels que \( a + s \) et \( b + s \) sont premiers entre eux.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Donner un exemple de nombre composé dont la représentation décimale contient exactement 1994 chiffres "1" et un chiffre "7" (et pas d'autre chiffre).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Montrer qu'il n'existe aucun \( x, y \in \mathbb{Q} \) tels que \( x^2 + y^2 = 3 \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit \( n \in \mathbb{N}_0 \). Montrer que si \( 2^n - 1 \) est premier, alors \( n \) est premier. Montrer que si \( 2^n + 1 \) est premier, alors \( n \) est une puissance de 2.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Pour tout entier strictement positif \( n \), trouver le reste de la division de \( \frac{(7n)!}{7^n \cdot n!} \) par 7.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Trouver le plus petit entier strictement positif \( a \) tel que 1971 divise \( 50^n + a \cdot 23^n \) pour tout \( n \) impair.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Déterminer le plus grand commun diviseur de tous les nombres de la forme \( p^8 - 1 \) avec \( p \) premier strictement supérieur à 5.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Trouver le nombre de paires d'entiers strictement positifs \( x, y \) avec \( x \leq y \) tels que \( \gcd(x, y) = 5! \) et \( \mathrm{lcm}(x, y) = 50! \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Démontrer le théorème de Wilson rappelé ci-après. Un nombre \( p \geq 2 \) est premier si et seulement si \( (p - 1)! \equiv -1 \mod p \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Trouver deux entiers strictement positifs \( a \) et \( b \) tels que \( (a + b)^7 - a^7 - b^7 \) est divisible par 77 mais \( ab(a + b) \) n'est pas divisible par 7.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Trouver tous les triangles rectangles dont l'hypoténuse a une longueur entière et dont les deux autres côtés ont des longueurs qui sont des carrés parfaits.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Si \( p \) et \( q \) sont des nombres premiers, et \( x \in \mathbb{Z} \) est tel que \( q \mid (x^{p-1} + x^{p-2} + \ldots + x + 1) \) alors montrer que \( p = q \) ou que \( p \) divise \( q - 1 \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Déterminer tous les entiers strictement positifs \( n \) tels que \( 2^n - 1 \cdot n + 1 \) est un carré parfait.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Montrer qu'il existe une infinité de nombres naturels non-nuls \( n \) tels que le nombre \( 1^2 + 2^2 + \ldots + n^2 / n \) est un carré parfait. Clairement \( 1 \) est le plus petit nombre ayant cette propriété. Trouver les deux plus petits nombres suivants ayant cette propriété.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Appelons un nombre entier strictement positif \( n \) fidèle s'il existe des nombres entiers strictement positifs \( a < b < c \) tels que \( a \) divise \( b \), \( b \) divise \( c \) et \( n = a + b + c \). Trouver tous les nombres infidèles.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soient \( p_1, p_2, \ldots, p_n \) des nombres premiers distincts strictement supérieurs à 3. Montrer que \( 2p_1p_2\ldots p_n + 1 \) a au moins \( 4n \) diviseurs.
+            </div>
+        </div>
+    </div>
+    <button><a href="formulaire de contact.html">Envoyer vos solutions</a></button>
+</body>
+</html>

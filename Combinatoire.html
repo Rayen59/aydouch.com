@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problèmes Mathématiques</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .probleme {
+            background-color: #4a4a1f;
+            border: 1px solid #3a3a1f;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .enonce {
+            background-color: #6a5a2f;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .letter {
+            display: inline-block;
+            position: relative;
+            font-size: 48px;
+            --char-color: #fff; /* Couleur par défaut des lettres */
+            color: var(--char-color);
+        }
+        button{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <span class="letter" style="--char-color: #ff4a4a;">C</span>
+        <span class="letter" style="--char-color: #4aff73;">o</span>
+        <span class="letter" style="--char-color: #4aff73;">m</span>
+        <span class="letter" style="--char-color: #4a4aff;">b</span>
+        <span class="letter" style="--char-color: #ffcc4a;">i</span>
+        <span class="letter" style="--char-color: #4affff;">n</span>
+        <span class="letter" style="--char-color: #73ff4a;">a</span>
+        <span class="letter" style="--char-color: #ff4aff;">t</span>
+        <span class="letter" style="--char-color: #4affff;">o</span>
+        <span class="letter" style="--char-color: #ff7d4a;">i</span>
+        <span class="letter" style="--char-color: #3fc43f;">r</span>
+        <span class="letter" style="--char-color: #6b4aff;">e</span>
+    </div>
+    <div class="container">
+        <div class="probleme">
+            <div class="enonce">
+                Sept nains sont assis autour d’une table ronde. Chacun a un verre devant lui. Il y a du lait dans certains verres et il y a au total 3 litres de lait. L’un des nains partage son lait uniformément entre les six autres sans en garder pour lui. En parcourant la table dans le sens trigonométrique, chaque autre nain fait de même. Après que le septième a partagé son lait, le contenu des verres est le même qu’au départ. Trouver de quelle quantité de lait chaque nain disposait.
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                Soit \( A \) un sous-ensemble de \( \mathbb{N}^* \) tel que pour tout \( x, y \in A \) avec \( x \neq y \), on ait \( |x - y| \geq xy / 25 \). Montrer que \( |A| \leq 9 \). Donner un exemple d’un tel ensemble.
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                Dans une compétition mathématique, il y a \( n \geq 4 \) problèmes. Chaque problème a été résolu par exactement quatre élèves. Pour deux problèmes, il y a exactement un élève qui les a résolus tous les deux. On suppose qu’il y a au moins \( 4n \) élèves participant à la compétition, déterminer alors la valeur minimale de \( n \) de sorte qu’il y ait toujours un élève qui a résolu tous les problèmes.
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                Soient \( X \) un ensemble fini, et \( A_1, A_2, \ldots, A_m \) des sous-ensembles de \( X \) avec \( |A_i| = r \) pour \( 1 \leq i \leq m \). On suppose que, pour tout \( i \neq j \), \( |A_i \cap A_j| \leq k \). Montrer alors que \( |X| \geq mr^2 / r + (m - 1)k \).
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                \( n \) équipes de football participent à un tournoi où chaque équipe joue contre chaque autre une seule fois. Le gagnant de chaque match obtient trois points, le perdant 0 point et les deux obtiennent un point en cas de match nul. Après le tournoi, l’antépénultième équipe a un score strictement inférieur à celui de n’importe quelle équipe avant elle, et strictement supérieur aux deux équipes après elle; elle a aussi strictement plus de victoires que les équipes avant elle, et strictement moins de victoires que les deux équipes après elle. Déterminer la valeur minimale de \( n \).
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                Une compétition mathématique se compose de 30 questions à choix multiples. Le score \( s \) d’un participant est calculé par la formule suivante : \( s = 30 + 4c - m \) où \( c \) est le nombre de réponses correctes et \( m \) le nombre de mauvaises réponses. Les élèves ne sont pas pénalisés pour les questions laissées sans réponse. Lisa a informé Christian de son score, qui était supérieur à 80, à cette compétition de mathématiques. À partir de là, Christian a pu déterminer le nombre de questions que Lisa a résolues correctement. Si le score de Lisa avait été plus bas, mais toujours supérieur à 80, Christian n’aurait pas pu le déterminer. Quel était le score de Lisa ?
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                À une conférence internationale il y a exactement 50 participants qui parlent anglais, exactement 50 participants qui parlent français et exactement 50 participants qui parlent espagnol. Certains de ces participants peuvent parler plus d’une des trois langues. Montrer qu’il existe une partition des participants en 5 groupes, de sorte qu’il y ait exactement 10 participants anglophones, exactement 10 participants francophones et exactement 10 participants hispanophones dans chacun de ces groupes.
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                Soient \( A_1, A_2, \ldots, A_n \) des ensembles finis. Montrer que si \( \sum_{1 \leq i < j \leq n} |A_i \cap A_j| / |A_i| \cdot |A_j| < 1 \), alors il existe \( a_i \in A_i \) pour \( i = 1, 2, \ldots, n \) tels que \( a_i \neq a_j \) si \( i \neq j \).
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                Il y a 20 filles et 20 garçons qui sont assis, face à face, autour de deux cercles concentriques (voir figure ci-dessous). Il y a exactement 20 personnes assises sur chacun des deux cercles, mais on ignore le nombre de garçons et de filles sur chacun d’eux. S’il arrive qu’un garçon \( g \) et une fille \( f \) soient assis face à face (chacun sur un cercle et en face l’un de l’autre), alors on dit que \( (f, g) \) forme une paire de partenaires. Montrer qu’il est possible de faire tourner le petit cercle de sorte que le nombre de paires partenaires soit supérieur ou égal à 10.
+            </div>
+        </div>
+        
+        <div class="probleme">
+            <div class="enonce">
+                Au début, chacune des six boîtes \( B1, B2, B3, B4, B5, B6 \) contient un jeton. Deux types d’opérations sont possibles :
+                <ul>
+                    <li>Type 1 : choisir une boîte non vide \( B_j \) avec \( 1 \leq j \leq 5 \); ôter un jeton de la boîte \( B_j \) et ajouter deux jetons à la boîte \( B_{j+1} \).</li>
+                    <li>Type 2 : choisir une boîte non vide \( B_k \) avec \( 1 \leq k \leq 4 \); ôter un jeton de la boîte \( B_k \) et échanger les contenus des boîtes (éventuellement vides) \( B_{k+1} \) et \( B_{k+2} \).</li>
+                </ul>
+                Est-il possible, à la suite d’un nombre fini de telles opérations, que les boîtes \( B1, B2, B3, B4, B5 \) soient vides et que la boîte \( B6 \) contienne exactement $$2010^{2010^{2010}}$$ jetons ?
+            </div>
+        </div>
+    </div>
+    <button><a href="formulaire de contact.html">Envoyer vos solutions</a></button>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathraining Problèmes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<style>
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.problem {
+    background-color: #3e3e3e;
+    border: 1px solid #4a4a4a;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.problem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.problem-title {
+    font-size: 22px;
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.problem-content {
+    background-color: #4a4a4a;
+    padding: 15px;
+    border-radius: 5px;
+    color: #d4d4d4;
+}
+
+.problem-stats {
+    background-color: #5a5a5a;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #b4b4b4;
+}
+
+.problem-stats p {
+    margin: 5px 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #4aa3df;
+}
+
+nav a {
+    color: #4aa3df;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff8c00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    color: #ff8c00;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2e2e2e;
+    color: #b4b4b4;
+    border-top: 1px solid #4a4a4a;
+}
+
+footer p {
+    margin: 5px 0;
+}
+</style>
+<body>
+    <nav>
+        <a href="#privacy-policy">Politique de Confidentialité</a>
+        <a href="#rules">Règles</a>
+    </nav>
+        <h2 id="privacy-policy">Politique de Confidentialité</h2>
+        <p>
+            Bienvenue sur le site de Math Olympiad. Votre vie privée est très importante pour nous. Cette politique de confidentialité explique comment nous recueillons, utilisons, divulguons et protégeons vos informations personnelles.
+        </p>
+        <h3>1. Informations que nous recueillons</h3>
+        <p>
+            Informations personnelles : Nom, adresse e-mail, numéro de téléphone.
+            Informations de navigation : Adresse IP, type de navigateur, pages visitées, temps passé sur le site.
+            Cookies : Nous utilisons des cookies pour améliorer votre expérience utilisateur.
+        </p>
+        <h3>2. Utilisation des informations</h3>
+        <p>
+            Fournir, exploiter et maintenir notre site web.
+            Améliorer, personnaliser et étendre notre site web.
+            Comprendre et analyser la manière dont vous utilisez notre site web.
+            Développer de nouveaux produits, services, fonctionnalités et fonctionnalités.
+            Communiquer avec vous, soit directement, soit par l'intermédiaire de l'un de nos partenaires, y compris pour le service clientèle, pour vous fournir des mises à jour et d'autres informations relatives au site web, et à des fins de marketing et de promotion.
+        </p>
+        <h3>3. Partage des informations</h3>
+        <p>
+            Avec des prestataires de services tiers pour nous aider à exploiter notre site web et à mener nos affaires.
+            Pour se conformer aux lois et règlements applicables, répondre à une citation à comparaître, à un mandat de perquisition ou à toute autre demande légale pour les informations que nous recevons, ou pour protéger nos droits.
+        </p>
+        <h3>4. Sécurité des données</h3>
+        <p>
+            Nous mettons en œuvre des mesures de sécurité pour protéger vos informations personnelles contre tout accès, utilisation ou divulgation non autorisés.
+        </p>
+        <h3>5. Vos droits</h3>
+        <p>
+            Vous avez le droit d'accéder, de corriger, de mettre à jour ou de demander la suppression de vos informations personnelles. Pour exercer ces droits, veuillez nous contacter à l'adresse e-mail suivante : privacymatholympiad40@gmail.com.
+        </p>
+        <h3>6. Modifications de cette politique de confidentialité</h3>
+        <p>
+            Nous pouvons mettre à jour notre politique de confidentialité de temps en temps. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page. Nous vous conseillons de consulter cette politique de confidentialité périodiquement pour toute modification.
+        </p>
+        <h3>7. Contactez-nous</h3>
+        <p>
+            Si vous avez des questions sur cette politique de confidentialité, veuillez nous contacter par e-mail à l'adresse suivante : privacymatholympiad40@gmail.com.
+        </p>
+        <h2 id="rules">Règles</h2>
+        <p>
+            1) Travail Individuel : Encouragez les utilisateurs à travailler seuls sur les problèmes proposés. Cela promeut la réflexion personnelleet la résolution autonome des problèmes mathématiques.
+            2) Rédaction Individuelle : Demandez aux utilisateurs de rédiger leurs solutions et leurs réponses de manière individuelle. Cela garantit l'originalité et l'authenticité des travaux soumis.
+            3) Politique de Fraude : Informez clairement les utilisateurs que toute forme de fraude, y compris la copie ou le plagiat, est strictement interdite et entraînera des mesures disciplinaires.
+            4) Sanctions en Cas de Fraude : Précisez que toute personne surprise à frauder sera soumise à des sanctions. Par exemple, l'accès au site des olympiades de mathématiques peut être temporairement ou définitivement bloqué, selon la gravité de l'infraction.
+            5) Durée du Blocage : Indiquez que la durée du blocage sera déterminée par l'administrateur du site, en fonction de la nature de la fraude commise. Cela peut varier en fonction de la première infraction, mais des mesures plus sévères peuvent être prises en cas de récidive.
+            6) Responsabilité des Utilisateurs : Soulignez l'importance pour chaque utilisateur de respecter l'intégrité académique et les règles du site. Encouragez-les à signaler toute activité suspecte ou toute violation des règles.
+            7) Éducation et Sensibilisation : Fournissez des ressources éducatives sur l'éthique académique et l'importance de l'intégrité dans les compétitions mathématiques. Cela peut inclure des conseils sur la manière de reconnaître et d'éviter la fraude.
+            😎 Pour réussir dans les Olympiades, il est crucial de comprendre les exigences et de se préparer efficacement. Tout d'abord, gérez votre temps de manière judicieuse : avec seulement 4 heures et demie pour résoudre 6 problèmes, chaque minute compte. Priorisez les problèmes selon leur complexité et concentrez-vous sur ceux que vous pouvez résoudre le plus rapidement. Assurez-vous de lire attentivement les instructions et de suivre les directives pour chaque problème afin d'éviter des erreurs coûteuses. De plus, gardez à l'esprit que la précision est primordiale : soumettez uniquement vos solutions une fois que vous êtes sûr de leur exactitude, car les soumissions après le temps imparti seront rejetées. Évitez également toute forme de plagiat : les organisateurs et les correcteurs sont attentifs et disposent de moyens pour détecter les similitudes entre les soumissions. Enfin, restez calme et concentré tout au long de l'épreuve, même face à des défis apparemment insurmontables. Gardez à l'esprit que chaque problème est une opportunité d'apprentissage et de croissance, et que votre persévérance peut faire la différence entre le succès et la défaite.
+        </p>
+    </div>
+    <footer>
+        <p>Dernière mise à jour : 7 juillet 2024</p>
+        <p>Contact : privacymatholympiad40@gmail.com</p>
+    </footer>
+</body>
+</html>

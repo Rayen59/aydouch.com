@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span style="color: #4aa3df;">G</span><span style="color: #6a5a2f;">é</span><span style="color: #4a4a1f;">o</span><span style="color: #4aa3df;">m</span><span style="color: #6a5a2f;">é</span><span style="color: #4a4a1f;">t</span><span style="color: #4aa3df;">r</span><span style="color: #6a5a2f;">i</span><span style="color: #4a4a1f;">e</span> Complexes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .probleme {
+            background-color: #4a4a1f;
+            border: 1px solid #3a3a1f;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .enonce {
+            background-color: #6a5a2f;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #4aa3df;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .trapeze {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 50px;
+            background-color: #4aa3df;
+            transform: skew(-20deg);
+            z-index: 1000;
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .letter {
+            display: inline-block;
+            position: relative;
+            font-size: 48px;
+            --char-color: #fff; /* Couleur par défaut des lettres */
+            color: var(--char-color);
+        }
+        button{
+            font-size: 24px;
+            ]
+    </style>
+</head>
+<body>
+    <div class="title">
+        <span class="letter" style="--char-color: #ff4a4a;">G</span>
+        <span class="letter" style="--char-color: #4aff73;">é</span>
+        <span class="letter" style="--char-color: #4aff73;">o</span>
+        <span class="letter" style="--char-color: #4a4aff;">m</span>
+        <span class="letter" style="--char-color: #ffcc4a;">é</span>
+        <span class="letter" style="--char-color: #4affff;">t</span>
+        <span class="letter" style="--char-color: #ff4aff;">r</span>
+        <span class="letter" style="--char-color: #4affff;">i</span>
+        <span class="letter" style="--char-color: #73ff4a;">e</span>
+    </div>
+    <div class="container">
+        <div class="trapeze"></div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle tel que \( AB \neq AC \) et \( \angle BAC \neq 90^\circ \). Soient M et N les milieux des segments [AB] et [AC]. Soient E et F les pieds respectifs des hauteurs issues des sommets B et C. Soit O le centre du cercle circonscrit au triangle ABC et soit H l’orthocentre du triangle ABC. La tangente au cercle circonscrit au triangle ABC en A coupe la droite (MN) en un point P. Soit Q le second point d’intersection des cercles circonscrits aux triangles ABC et AEF. Les droites (EF) et (AQ) se coupent au point R. Montrer que les droites (OH) et (PR) sont perpendiculaires.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle, E et F les pieds des hauteurs issues respectivement des sommets B et C. Soit P le point d’intersection de la hauteur issue du sommet A avec le cercle circonscrit au triangle ABC. La droite (PE) recoupe le cercle circonscrit au triangle ABC en un point Q. Montrer que la droite (BQ) coupe le segment [EF] en son milieu.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle, I le centre de son cercle inscrit et \( \Gamma \) son cercle circonscrit. Soit M le milieu du segment [BC]. Soit D le projeté orthogonal du point I sur le segment [BC]. La perpendiculaire à la droite (AI) passant par le point I coupe le segment [AB] en un point E et le segment [AC] en un point F. Soit X le second point d’intersection des cercles circonscrits aux triangles ABC et AEF. Montrer que les droites (XD) et (AM) se coupent sur le cercle \( \Gamma \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle isocèle au point A. Soit I le centre de son cercle inscrit. La droite (BI) recoupe la droite (AC) au point D et la droite perpendiculaire à la droite (AC) passant par D coupe la droite (AI) au point E. Montrer que le symétrique du point I par rapport à la droite (AC) appartient au cercle circonscrit au triangle BDE.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle tel que \( \angle CAB > \angle ABC \). Soit I le centre de son cercle inscrit. Soit D un point du segment [BC] tel que \( \angle CAD = \angle CBA \). Soit \( \omega \) le cercle tangent au segment [AC] au point A et passant par le point I. Soit X le second point d’intersection du cercle \( \omega \) avec le cercle circonscrit au triangle ABC. Montrer que les bissectrices des angles \( \angle DAB \) et \( \angle CXB \) se coupent sur le segment [BC].
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle aux angles aigus et soit O le centre de son cercle circonscrit. On note respectivement D, E et F les milieux des segments [BC], [CA] et [AB]. Soit M un point distinct du point D sur le segment [BC]. Soit N le point d’intersection des droites (EF) et (AM). La droite (ON) recoupe le cercle circonscrit au triangle ODM au point P. Montrer que le symétrique du point M par rapport à la droite (DP) appartient au cercle d’Euler du triangle ABC.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle et \( \Omega \) son cercle circonscrit. On considère un cercle \( \omega \) tangent intérieurement au cercle \( \Omega \) au point A. On note P et Q les points d’intersection (distincts du point A) du cercle \( \omega \) avec les côtés [AB] et [AC] respectivement. On note également O le point d’intersection des droites (BQ) et (CP). Soit A₀ le symétrique du point A par rapport à la droite (BC) et on note S le point d’intersection de la droite (OA₀) avec le cercle \( \omega \) tel que le point S appartient à l’arc PQ ne contenant pas le point A. Montrer que le cercle circonscrit au triangle BSC est tangent au cercle \( \omega \).
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle aux angles aigus tel que \( AB < AC \). Soit D, E et F les points de contact respectifs du cercle inscrit au triangle ABC avec les côtés [BC], [CA] et [AB]. La droite perpendiculaire au segment [EF] passant par le point D recoupe le segment [AB] en un point G. Le cercle circonscrit au triangle AEF recoupe le cercle circonscrit au triangle ABC au point X. Montrer que les points X, G, D et B sont cocycliques.
+            </div>
+        </div>
+        <div class="probleme">
+            <div class="enonce">
+                Soit ABC un triangle aux angles aigus. Soient D, E et F les pieds des hauteurs issues des sommets A, B et C respectivement. On note respectivement I₁ et I₂ les centres des cercles inscrits aux triangles AEF et BDF. On note O₁ et O₂ les centres des cercles circonscrits aux triangles ACI₁ et BCI₂. Montrer que les droites (O₁O₂) et (I₁I₂) sont parallèles.
+            </div>
+        </div>
+    </div>
+    <button><a href="formulaire de contact.html">Envoyer vos solutions</a></button>
+</body>
+</html>
